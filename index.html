@@ -613,6 +613,15 @@
       .hero-lower { grid-template-columns: 1fr; }
       .hero-lower-left { padding: 0 32px 40px; }
       .hero-lower-right { display: none; }
+      /* On tablet/mobile show photo between headline and copy */
+      .hero-lower { display: flex; flex-direction: column; }
+      .hero-lower-right {
+        display: block;
+        order: -1;
+        width: 100%;
+      }
+      .hero-group4 { width: 100%; max-width: 100%; }
+      .hero-lower-left { padding-bottom: 40px; }
 
       /* Services */
       .services-layout { grid-template-columns: 1fr; gap: 40px; }
